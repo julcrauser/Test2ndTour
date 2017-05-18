@@ -1,0 +1,65 @@
+﻿Diagramme relationnel
+
+Votants(	
+	#id : integer,
+	nom : string,
+	prenom : string,
+	datedn : date,
+	depdn : integer,
+	villedn : string,
+	sexe : {'H','F'},
+	adresse : string,
+	codepostal : int,
+	ville : string,
+	mdp : string
+)
+
+avec nom, prenom, datedn, depnd, villend, sexe, adresse, codepostal, ville, mdp NOT NULL
+
+Prenoms(
+	#porteur=>Votant.id,
+	#prenom : string
+)
+
+Contrainte : Projection(Votants, id, prenom) NOT IN Projection(Prenoms, porteur, prenom)
+
+Heritage par reference :
+
+Candidats(
+	#candidat=>Votant.id,
+	programme : string,
+	parti : string,
+	validation : boolean
+)
+
+avec validation NOT NULL
+
+Vote(
+	#votant=>Votant.id,
+	candidat=>Candidat.id,
+)
+
+avec candidat.validation = TRUE AND date NOT NULL
+
+
+
+Analyse de la redondance :
+
+Diagramme en 1NF :
+	- existance de clés
+	- attributs atomiques
+
+Diagramme en 2NF :
+	- 1NF
+	- pas de partie de la clé qui détermine un attribut non clé car la clé est composée d'un seul attribut
+
+Diagramme en 3NF :
+	- en 2NF
+
+Suppositions : 
+- dans Votant : villedn ne détermine pas depdn 
+- dans Votant : ville ne determine pas codepostal
+(il existe plusieurs villes comportant le même nom mais qui ne se trouvent pas dans le même département)
+	
+	- pas d'attribut non clé qui détermine un autre attribut non clé
+
