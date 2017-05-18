@@ -1,11 +1,11 @@
 INSERT INTO Votants (id, nom, prenom, datedn, villedn, depdn, sexe, adresse, ville, codepostal, mdp) VALUES
-(160000000120, 'Dupont', 'Martine', 01-01-1990, 'Paris', 75, 'F', '14 rue Solferino','Compiegne','60200','mdupont');
+(160000000120, 'Dupont', 'Martine', '01-01-1990', 'Paris', 75, 'F', '14 rue Solferino','Compiegne','60200','mdupont');
 
 INSERT INTO Prenoms(id, prenom) VALUES
 (160000000120, 'Lucile');
 
-INSERT INTO Votants (id, nom, prenom, datedn, villedn, depdn, sexe, adresse, ville, codepostal, mdp) VALUES
-(160000000121, 'Lepen', 'Marine', 05-08-1968, 'Neuilly-sur-Seine', 92, 'F', '14 rue Paris','Paris','92051','mlepen');
+INSERT INTO Votants (id, nom, prenom ,datedn, villedn, depdn, sexe, adresse, ville, codepostal, mdp) VALUES
+(160000000121, 'Lepen', 'Marine', '05-08-1968', 'Neuilly-sur-Seine', 92, 'F', '14 rue Paris','Paris','92051','mlepen');
 
 INSERT INTO Prenoms(id, prenom) VALUES
 (160000000121, 'Marion');
@@ -17,7 +17,7 @@ INSERT INTO Prenoms(id, prenom) VALUES
 (160000000121, 'Perine');
 
 INSERT INTO Votants (id, nom, prenom, datedn, villedn, depdn, sexe, adresse, ville, codepostal, mdp) VALUES
-(160000000122, 'Macron', 'Emmanuel', 21-12-1977, 'Amiens', 80, 'H', '16 rue Paris','Paris','92340','emacron');
+(160000000122, 'Macron', 'Emmanuel', '21-12-1977', 'Amiens', 80, 'H', '16 rue Paris','Paris','92340','emacron');
 
 INSERT INTO Prenoms(id, prenom) VALUES
 (160000000122, 'Jean-Michel');
