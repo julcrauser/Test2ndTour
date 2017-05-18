@@ -1,0 +1,184 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title> Inscription </title>
+</head>
+
+<body>
+<center> 
+<h1> Inscription </h1> 
+
+<table>
+<form method="post" action="inscrire.php">
+
+<TR>
+	<TD> 
+		Numero de carte d'identit&eacute; 
+	</TD>
+
+	<TD> 
+		<input type="number" name="id" maxlenght="12" required> 
+	</TD>
+</TR>
+
+<TR>
+	<TD> 
+		Mot de passe du compte 
+	</TD>
+
+	<TD> 
+		<input type="password" name="password" required> 
+	</TD>
+</TR>
+
+<TR>
+	<TD> 
+		Nom 
+	</TD>
+
+	<TD> 
+		<input type="text"  name="nom" required> 
+	</TD>
+</TR>
+
+<TR>
+	<TD> 
+		Pr&eacute;nom 
+	</TD>
+
+	<TD> 
+		<input type="text"  name="prenom" required> 
+	</TD>
+</TR>
+
+<TR>
+	<TD>
+		<small>
+			<i> 
+				2&egrave;me pr&eacute;nom 
+			</i>
+		</small>
+	</TD>
+	
+	<TD> 
+		<input type="text"  name="p2"> 
+	</TD>
+</TR>
+
+<TR>
+	<TD>
+		<small>
+			<i> 
+				3&egrave;me pr&eacute;nom 
+			</i>
+		</small>
+	</TD>
+
+	<TD> 
+		<input type="text"  name="p3"> 
+	</TD>
+</TR>
+
+<TR>
+	<TD>
+		<small>
+			<i> 
+				4&egrave;me pr&eacute;nom 
+			</i>
+		</small>
+	</TD>
+
+	<TD> 
+		<input type="text"  name="p4"> 
+	</TD>
+</TR>
+
+<TR>
+	<TD> 
+		Date de naissance (AAAA-MM-JJ) 
+	</TD>
+
+	<TD> 
+		<input type="date" name="datedn" required> 
+	</TD>
+</TR>
+
+<TR>
+	<TD> 
+		Ville de naissance 
+	</TD>
+
+	<TD> 
+		<input type="text" name="villedn" required> 
+	</TD>
+</TR>
+
+<TR>
+	<TD> 
+		D&eacute;partement de naissance (XX)
+	</TD>
+
+	<TD> 
+		<input type="number" name="depdn" maxlength="2" required> 
+	</TD>
+</TR>
+
+<TR>
+	<TD> 
+		Sexe 
+	</TD>
+
+	<TD> 	
+		<input type="radio" name="sexe" value="H" required> Homme<br>
+		<input type="radio" name="sexe" value="F" required> Femme<br>
+	</TD>
+</TR>
+
+<TR>
+	<TD> 
+		Adresse 
+	</TD>
+
+	<TD> 
+		<input type="text" name="adresse" required> 
+	</TD>
+</TR>
+
+<TR>
+	<TD> 
+		Ville 
+	</TD>
+
+	<TD> 
+		<input type="text" name="ville" required> 
+	</TD>
+</TR>
+
+<TR>
+	<TD> 
+		Code Postal (XXXXX) 
+	</TD>
+
+	<TD> 
+		<input type="text" name="codepostal" maxlength="5" required> 
+	</TD>
+</TR>
+
+
+<TR>
+	<TD> 
+		<input type="submit" value="Valider"> 
+	</TD>
+
+	<TD> 
+		<input type="reset" VALUE="Effacer"> 
+	</TD>
+</TR>
+
+</form>
+</table>
+<BR>
+<a href="accueil.html">Retour à l'accueil</a>
+</center>
+</body>
+</html>
